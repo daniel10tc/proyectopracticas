@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+body{
+    font-family: 'Poppins', sans-serif; 
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    background-image: linear-gradient(
+        rgba(177, 66, 66, 0.7),
+        rgba(70, 170, 52, 0.7)),
+        url(imagenes/imagen.png.png);
+    background-position: center bottom; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    color: #FFFDFC;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+    
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #5e349c;
+    display: block;
+    font-weight: 800;
+}
+
+.menu .navbar ul li a:hover{
+    color: #e0f311;
+
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 100px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+
+
+             
+.header-content h1 {
+    font-size: 75px;
+    line-height: 80px;
+    color: #F9FAFC;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.header-content p {
+    font-size: 16px;
+    color: #C5C5C5;
+    padding: 0 250px;
+    margin-bottom: 25px;
+}
+
+.header-content {
+    text-align: center;
+}
+
+
+.header-content h1 {
+    font-size: 75px;
+    line-height: 80px;
+    color: #F9FAFC;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #200ac7;
+    color: #F9FAFC;
+    text-transform: uppercase;
+}
+
+.btn-1:hover {
+    background-color: #e0f311;
+}
+
+
+
+
+.brigadas-group {
+    padding: 50px 20px;
+    background-color: #f7f7f7;       
+}
+
+.brigadas-content {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 30px; 
+    justify-content: center; 
+    max-width: 1200px; 
+    margin: 0 auto; }
+
+
+.brigadas-1 {
+    width: calc(50% - 20px); 
+    background-color: #d4d1d1; 
+    border-radius: 15px; 
+    padding: 20px; 
+    box-sizing: border-box; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    
+}
+
+
+.brigadas-1 img {
+    width: 100%;
+    height: auto; 
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 15px; 
+}
+
+
+.brigadas-1 h3 {
+    font-size: 20px;
+    color: #323337;
+    font-weight: 600; 
+    margin-bottom: 10px; 
+}
+
+
+.brigadas-1 p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.brigadas-1:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15); 
+}
+
+
+@media (max-width: 768px) {
+    .brigadas-1 {
+        width: calc(50% - 20px); 
+    }
+}
+
+
+@media (max-width: 480px) {
+    .brigadas-1 {
+        width: 100%; 
+    }
+}
+
+
+
+
+.general{
+    display: flex;
+}
+
+.general-1 {
+    width: 50%;
+    padding: 100px 250px 100px 100px;
+    background-color: #dadadcbe;
+}
+
+.general-2 {
+  background-image: url(imagenes/COP-REGALO.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+}
+
+.general-3 {
+    background-image: url(imagenes/COP-ACTUAL.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+  }
+  
+h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+p { 
+    font-size: 16px;
+    color: #323337;
+    margin: 25px 0 45px 0;
+}
+
+
+
+
+.blog { 
+    padding: 100px 0;
+    text-align: center;
+    background-color: #f7f7f7; 
+}
+
+
+.blog-content { 
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 30px; 
+    margin: 0 auto;
+    max-width: 1200px; 
+}
+
+
+.blog-1 { 
+    padding: 15px;
+    width: calc(50% - 30px); 
+    box-sizing: border-box; 
+    background-color: #c2c1c1; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+
+.blog-1 a { 
+    display: block;
+    text-decoration: none; 
+    }
+
+
+.blog-1 img { 
+    width: 100%; 
+    height: auto; 
+    border-radius: 15px; 
+    margin-bottom: 20px; 
+    object-fit: cover; 
+}
+
+
+.blog-1 h3 { 
+    font-size: 22px;
+    color: #323337;
+    margin-bottom: 10px; 
+    font-weight: 600; 
+}
+
+
+.blog-1:hover { 
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); 
+}
+
+
+@media (max-width: 768px) {
+    .blog-1 { 
+        width: calc(50% - 20px); 
+    }
+}
+
+
+@media (max-width: 480px) {
+    .blog-content {
+        flex-direction: column; 
+        gap: 20px; 
+    }
+
+    .blog-1 { 
+        width: 100%;
+    }
+}
+
+
+
+
+.footer {
+    padding: 100px 0;
+    background-color: #000000;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link h3 {
+    font-size: 18px;
+    color: #F9FAFC;
+    margin-bottom: 15px;
+}
+
+.link a {
+    font-size: 16px;
+    color: #C5C5C5;
+    display: block;
+    margin-bottom: 15px;
+}
+
+
+
+@media (max-width: 991px) {
+
+    .menu {
+        padding: 30px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #323337;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked + .navbar {
+        display: initial;
+    }
+}
+
+
+
+.header { 
+    min-height: 0vh;
+}
+
+.header-content { 
+    padding: 100px 30px;
+}
+
+.header-content p { 
+    padding: 0;
+}
+
+.brigadas { 
+    padding: 30px;
+}
+
+.brigadas-content h2 { 
+    padding: 0;
+}
+
+.txt-p { 
+    padding: 0;
+}
+
+.brigadas-group { 
+    flex-direction: column;
+    margin-bottom: 0;
+}
+
+.brigadas-img { 
+    display: none;
+}
+
+
+.services { 
+    padding: 30px;
+}
+
+.services-content p {
+    padding: 0;
+}
+
+.services-group {
+    flex-direction: column;
+    margin-bottom: 0;
+}
+
+.services-1 {
+    margin-bottom: 25px;
+}
+
+
+
+
